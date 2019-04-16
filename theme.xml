@@ -1,0 +1,214 @@
+<!--
+theme name:     Mini Spin Themes
+Description:	This theme is designed for the Waveshare Game Hat, Screen resolution 480x320
+creator:		Dwayne Hurst (aka Hursty) - Not a loaded image maker wanna-be
+version         1.0
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+   <formatVersion>4</formatVersion>
+
+<!--
+Carousel wheel and main menu background
+-->
+
+
+<feature supported="carousel">
+   <view name="system">
+      <carousel name="systemcarousel">
+        <type>vertical</type>
+        <pos>0.0 0.0</pos>
+        <size>1 1</size>
+        <logoScale>1.025</logoScale>
+        <zIndex>41</zIndex>          
+        <logoSize>0.9 0.9</logoSize>
+        <color>00000000</color>
+        <maxLogoCount>3</maxLogoCount>
+      </carousel>
+      <image name="background" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>
+         <zIndex>2</zIndex>                 
+         <path>./_inc/images/main.png</path>
+      </image>                    
+      <text name="systemInfo">     
+         <pos>0.0 0.635</pos>
+         <backgroundColor>00000000</backgroundColor>
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+	     <fontSize>0.042</fontSize>
+         <zIndex>7</zIndex>	     
+      </text>            
+   </view>
+</feature>
+
+
+<!--
+On Screen help
+-->
+
+   <view name="system">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.02</fontSize>     
+         <pos>1.02 0.95</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>  
+
+   <view name="detailed,video">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.017</fontSize>     
+         <pos>1.02 0.962</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view> 
+   <view name="basic">
+      <helpsystem name="help">
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.019</fontSize>     
+         <pos>1.02 0.95</pos>      
+         <textColor>ffffff</textColor>
+         <iconColor>ffffff</iconColor>
+      </helpsystem>
+   </view>      
+   
+<!--
+System Gamelist
+--> 
+
+   <view name="detailed,video">
+      <textlist name="gamelist">
+         <zIndex>43</zIndex>	      
+	     <selectorColor>1c1c1c00</selectorColor>
+	     <selectedColor>F3E804</selectedColor>    
+         <pos>0.03 0.04</pos>
+         <size>0.47 0.9</size>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.06</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>left</alignment>    
+      </textlist>
+   </view> 
+  
+   <view name="basic">
+      <textlist name="gamelist">
+         <zIndex>43</zIndex>	      
+	     <selectorColor>1c1c1c00</selectorColor>
+	     <selectedColor>F3E804</selectedColor>   
+         <pos>0.05 0.23</pos>
+         <size>0.9 0.73</size>
+         <primaryColor>ffffff</primaryColor>
+         <secondaryColor>ffffff</secondaryColor>
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.06</fontSize>
+         <forceUppercase>1</forceUppercase>
+         <scrollSound></scrollSound>
+         <alignment>center</alignment>       
+      </textlist>
+   </view>   
+  
+<!--
+System View Backgrounds
+-->  
+    
+   
+   <view name="basic">
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/basic.png</path>
+         <zIndex>3</zIndex>          
+      </image>
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.21 0.015</pos>
+         <maxSize>0.6 0.6</maxSize>
+      </image>                         
+   </view> 
+    
+   <view name="detailed,video">
+      <image name="background2" extra="true">
+         <origin>0 0</origin>
+         <pos>0 0</pos>
+         <size>1 1</size>        
+         <path>./_inc/images/video.png</path>
+         <zIndex>3</zIndex>         
+      </image>                
+   </view>     
+    
+<!--
+Metadata, description, rating etc
+-->      
+    
+
+   <view name="detailed">   
+      <text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount, md_rating, md_developer, md_publisher, md_genre, md_playcount, md_lastplayed">
+         <pos>1 1</pos>
+      </text>
+      <text name="md_lbl_rating,md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_lastplayed, md_lbl_playcount,md_lbl_players,md_developer, md_publisher, md_genre, md_playcount, md_lastplayed,md_description,md_players,md_releasedate">
+         <color>ffffff</color>
+         <fontPath>./_inc/fonts/GROBOLD.ttf</fontPath>
+         <fontSize>0.025</fontSize>
+      </text>
+      <rating name="md_rating">
+         <zIndex>35</zIndex>       
+         <pos>0.57 0.28</pos>
+         <size>0.15 0.1</size>
+         <filledPath>./_inc/images/star_filled.png</filledPath>
+         <unfilledPath>./_inc/images/star_empty.png</unfilledPath>
+      </rating>
+   </view>
+
+  
+
+<!--
+Images, boxart, snaps, wheel art etc
+--> 
+
+
+   <view name="detailed">
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.55 0.042</pos>
+         <maxSize>0.41 1</maxSize>
+      </image>    
+      <image name="md_image">
+         <pos>0.763 0.7</pos>
+         <maxSize>0.41 0.49</maxSize>
+         <zIndex>6</zIndex>     
+      </image>           
+   </view>
+
+   <view name="video"> 
+      <image name="logo">
+         <origin>0.0 0.0</origin>      
+         <pos>0.55 0.042</pos>
+         <maxSize>0.41 1</maxSize>
+      </image>   
+      <video name="md_video">
+         <pos>0.763 0.7</pos>
+         <maxSize>0.41 0.49</maxSize>
+         <delay>1.0</delay>
+         <zIndex>41</zIndex>         
+         <showSnapshotNoVideo>true</showSnapshotNoVideo>
+         <showSnapshotDelay>true</showSnapshotDelay>
+      </video>         
+      <image name="md_marquee">
+         <pos>0.75 0.33</pos>
+         <origin>0.5 0.5</origin>
+         <maxSize>0.25 0.16</maxSize>
+         <zIndex>7</zIndex>         
+      </image>             
+   </view>
+   
+</theme>
